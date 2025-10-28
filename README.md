@@ -15,6 +15,7 @@
 It provides a quality-assurance layer between data collection and model training—catching synchronization errors and sensor degradation before expensive labeling or GPU training begins.
 
 ---
+- Dharineesh Somisetty - `dhar007@uw.edu`
 
 ## 🧠 Key Features
 - ⏱️ **Temporal Alignment Check** – Detects desynchronization between LiDAR, camera, radar, and IMU streams.  
