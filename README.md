@@ -16,6 +16,8 @@ It provides a quality-assurance layer between data collection and model training
 
 ---
 
+- Xinxin Tai - `xtaiuw@uw.edu`
+
 ## 🧠 Key Features
 - ⏱️ **Temporal Alignment Check** – Detects desynchronization between LiDAR, camera, radar, and IMU streams.  
 - 🔍 **Data Anomaly Detection** – Flags missing frames, corrupted files, or degraded sensor readings.  
