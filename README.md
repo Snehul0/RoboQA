@@ -15,9 +15,9 @@
 It provides a quality-assurance layer between data collection and model training—catching synchronization errors and sensor degradation before expensive labeling or GPU training begins.
 
 ---
-- Dharineesh Somisetty - `dhar007@uw.edu`
 
 ## Team Members
+- Dharineesh Somisetty - `dhar007@uw.edu`
 - Xinxin Tai - `xtaiuw@uw.edu`
 - Archit Jain - `architj@uw.edu`
 
