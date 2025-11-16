@@ -1,1 +1,65 @@
+RoboQA-Temporal: Component Design Document
+1. Components by Use Case
+Use Case 1 – Validate Temporal Synchronization
+- ROS2 bag reader
+- Timestamp extractor
+- Synchronization analysis module
+- Visualization interface
+- Temporal sync control logic
+Use Case 2 – Point-Cloud Anomaly Detection
+- ROS2 bag reader (shared)
+- Point cloud extractor
+- Point-cloud anomaly engine
+- Visualization interface
+- Point-cloud anomaly control logic
+Use Case 3 – Sensor Calibration Quality Assessment
+- ROS2 bag reader (shared)
+- Calibration data loader
+- Calibration evaluator
+- Visualization interface
+- Calibration quality control logic
+Use Case 4 – Dataset Quality Scoring & Benchmarking
+- Metrics aggregator
+- Quality scoring engine
+- Benchmark comparator
+- Report generator
+- Dataset quality scoring control logic
+2. Component Specifications
+Temporal sync control logic
+What it does: Coordinates temporal synchronization validation: reads bag, extracts timestamps, computes drift/jitter, generates sync metrics and reports.
+Inputs:
+•	bag_path: string
+•	topic_config: dictionary
+•	sync_thresholds: dictionary
+Outputs:
+•	sync_ok: Boolean
+•	sync_metrics: dictionary
+•	sync_report_path: string
+Components used:
+•	ROS2 bag reader
+•	Timestamp extractor
+•	Synchronization analysis module
+•	Visualization interface
+•	Report generator
+Side effects: Writes sync reports and logs drift warnings.
+Dataset quality scoring control logic
+What it does: Runs all quality pipelines, aggregates metrics, computes TFQS, compares against benchmarks, and generates final report.
+Inputs:
+•	bag_paths: list of strings
+•	scoring_config: dictionary
+•	benchmark_id: string
+Outputs:
+•	overall_quality_score: float (0-100)
+•	dimension_scores: dictionary
+•	benchmark_percentiles: dictionary
+•	quality_report_path: string
+Components used:
+•	Temporal sync control logic
+•	Point-cloud anomaly control logic
+•	Calibration quality control logic
+•	Metrics aggregator
+•	Quality scoring engine
+•	Benchmark comparator
+•	Report generator
+Side effects: Writes quality reports and can trigger CI pipeline failures.
 
