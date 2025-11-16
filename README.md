@@ -20,7 +20,7 @@ It provides a quality-assurance layer between data collection and model training
 - Dharineesh Somisetty - `dhar007@uw.edu`
 - Xinxin Tai - `xtaiuw@uw.edu`
 - Archit Jain - `architj@uw.edu`
-- Sayali Nehul - 'snehul@uw.edu'
+- Sayali Nehul - `snehul@uw.edu`
 
 
 ## 🧠 Key Features
