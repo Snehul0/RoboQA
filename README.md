@@ -30,7 +30,8 @@ It provides a quality-assurance layer between data collection and model training
 - 📊 **Visual Reports** – Summarizes data integrity and synchronization status.  
 - 🧱 **Extensible Design** – Easy to adapt for new sensors or custom validation rules.  
 
----
+## User Cases
+ - you can find all the user cases in (Wiki) https://github.com/Snehul0/RoboQA/wiki/User-Stories
 
 ## 🛠️ Installation
 
